@@ -191,6 +191,50 @@ var questions = [
     },
     {
         type: "choose",
+        question: "<h4>A network team is comparing physical WAN topologies for connecting remote sites to a headquarters building. Which topology provides high availability and connects some, but not all, remote sites?</h4>",
+        answers: [
+            "mesh",
+"partial mesh",
+"hub and spoke",
+"point-to-point"
+        ],
+        correct: [2]
+    },
+    {
+        type: "choose",
+        question: "<h4>What method is used to manage contention-based access on a wireless network?</h4>",
+        answers: [
+            "CSMA/CD",
+"priority ordering"
+"CSMA/CA",
+"token passing"
+        ],
+        correct: [3]
+    },
+    {
+        type: "choose",
+        question: "<h4>What will a host on an Ethernet network do if it receives a frame with a destination MAC address that does not match its own MAC address?</h4>",
+        answers: [
+            "It will discard the frame.",
+"It will forward the frame to the next host.",
+"It will remove the frame from the media.",
+"It will strip off the data-link frame to check the destination IP address."
+        ],
+        correct: [1]
+    },
+    {
+        type: "choose",
+        question: "<h4>Which frame forwarding method receives the entire frame and performs a CRC check to detect errors before forwarding the frame?</h4>",
+        answers: [
+            "cut-through switching",
+"store-and-forward switching",
+"fragment-free switching",
+"fast-forward switching"
+        ],
+        correct: [2]
+    },
+    {
+        type: "choose",
         question: "<h4>Вопрос</h4>",
         answers: [
             "Ответ 1",
@@ -199,6 +243,54 @@ var questions = [
         ],
         correct: [3]
     },
+    {
+        type: "choose",
+        question: "<h4>Refer to the exhibit. If host A sends an IP packet to host B, what will the destination address be in the frame when it leaves host A?</h4><img src='img/2.png' />",
+        answers: [
+            "DD:DD:DD:DD:DD:DD",
+"172.168.10.99",
+"CC:CC:CC:CC:CC:CC",
+"172.168.10.65",
+"BB:BB:BB:BB:BB:BB",
+"AA:AA:AA:AA:AA:AA"
+        ],
+        correct: [5]
+    },
+    {
+        type: "choose",
+        question: "<h4>What addresses are mapped by ARP?</h4>",
+        answers: [
+            "destination MAC address to a destination IPv4 address",
+"destination IPv4 address to the source MAC address",
+"destination IPv4 address to the destination host name",
+"destination MAC address to the source IPv4 address"
+        ],
+        correct: [1]
+    },
+    {
+        type: "choose",
+        question: "<h4>What information is added during encapsulation at OSI Layer 3?</h4>",
+        answers: [
+            "source and destination MAC",
+"source and destination application protocol",
+"source and destination port number",
+"source and destination IP address"
+        ],
+        correct: [4]
+    },
+    {
+        type: "choose",
+        question: "<h4>Вопрос</h4>",
+        answers: [
+            "Ответ 1",
+            "Ответ 2",
+            "Ответ 3"
+        ],
+        correct: [3]
+    },
+
+
+
 ];
 
 $("document").ready(function(){
