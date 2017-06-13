@@ -27,11 +27,11 @@
             $(this).click(function(){
                 $(this).off('click');
 
-                $(".intro").hide();
+                $(".intro").hide(); // intro скрывается
                 $(this).css("text-align", "left");
                 $('.progress').css("display", "block");
 
-                var question = $("#question-1");
+                var question = $("#question-1"); //переменная вопрос
 
                 question.css({opacity : '0', height : '0px'});
 
@@ -43,16 +43,16 @@
                 question.css('display', 'block');
 
                 percentage += percentPiece;
-                $(".progress div").css("width", percentage + "%");
-            });
+                $(".progress div").css("width", percentage + "%"); //проценты для прогресса
+            }); // end закрытие интро
 
             (function($){
-                $.shuffle = function(arr) {
+                $.shuffle = function(arr) { //перетасовка ответов
                     for(
-                            var j, x, i = arr.length; i;
-                            j = parseInt(Math.random() * i),
-                                    x = arr[--i], arr[i] = arr[j], arr[j] = x
-                            );
+                      var j, x, i = arr.length; i;
+                        j = parseInt(Math.random() * i),
+                          x = arr[--i], arr[i] = arr[j], arr[j] = x
+                        );
                     return arr;
                 }
             })(jQuery);
@@ -75,7 +75,7 @@
 
                     html += question.question;
 
-                    var correctAnswers = [];
+                    var correctAnswers = []; // массив правильных ответов
                     for (var i = 0; i < question.correct.length; i++)
                         correctAnswers.push(question.answers[question.correct[i] - 1]);
 
