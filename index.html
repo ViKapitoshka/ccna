@@ -170,13 +170,15 @@ var questions = [
     },
     {
         type: "choose",
-        question: "<h4>Вопрос</h4>",
+        question: "<h4>What purpose does NAT64 serve in IPv6?</h4>",
         answers: [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3"
+            "It converts IPv6 packets into IPv4 packets.",
+"it translates private ipv6 addresses into public ipv6 addresses.",
+"It enables companies to use IPv6 unique local addresses in the network.",
+"It converts regular IPv6 addresses into 64-bit addresses that can be used on the Internet.",
+"It converts the 48-bit MAC address into a 64-bit host address that can be used for automatic host addressing."
         ],
-        correct: [3]
+        correct: [1]
     },
     {
         type: "choose",
@@ -303,13 +305,26 @@ var questions = [
     },
     {
         type: "choose",
-        question: "<h4>Вопрос</h4>",
+        question: "<h4>What is the most compressed representation of the IPv6 address 2001:0000:0000:abcd:0000:0000:0000:0001?</h4>",
         answers: [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3"
+            "2001:0:abcd::1",
+"2001:0:0:abcd::1",
+"2001::abcd::1",
+"2001:0000:abcd::1",
+"2001::abcd:0:1"
         ],
-        correct: [3]
+        correct: [2]
+    },
+    {
+        type: "choose",
+        question: "<h4>Which range of link-local addresses can be assigned to an IPv6-enabled interface?</h4>",
+        answers: [
+            "FEC0::/10",
+"FDEE::/7",
+"FE80::/10",
+"FF00::/8"
+        ],
+        correct: [2]
     },
 
 
