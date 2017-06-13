@@ -683,7 +683,7 @@ var questions = [
         type: "choose",
         question: "<h4>What source IP address does a router use by default when the traceroute command is issued?</h4>",
         answers: [
-            "the highest configured IP address on the router"
+            "the highest configured IP address on the router",
 "the lowest configured IP address on the router",
 "a loopback IP address",
 "the IP address of the outbound interface"
@@ -727,7 +727,7 @@ var questions = [
         type: "choose",
         question: "<h4>What layer is responsible for routing messages through an internetwork in the TCP/IP model?</h4>",
         answers: [
-            "internet"
+            "internet",
 "transport",
 "network access",
 "session"
@@ -749,7 +749,7 @@ var questions = [
         type: "choose",
         question: "<h4>What unique address is embedded in an Ethernet NIC and used for communication on an Ethernet network?</h4>",
         answers: [
-            "host address"
+            "host address",
 "IP address",
 "MAC address",
 "network address",
@@ -773,7 +773,7 @@ var questions = [
         type: "choose",
         question: "<h4>During the encapsulation process, what occurs at the data link layer for a PC connected to an Ethernet network?</h4>",
         answers: [
-            "An IP address is added."
+            "An IP address is added.",
 "The logical address is added.",
 "The physical address is added.",
 "The process port number is added."
@@ -905,11 +905,14 @@ var questions = [
     },
     {
         type: "choose",
-        question: "<h4>Вопрос</h4>",
+        question: "<h4>After several configuration changes are made to a router, the copy running-configuration startup-configuration command is issued. Where will the changes be stored?</h4>",
         answers: [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3"
+            "flash",
+"ROM",
+"NVRAM",
+"RAM",
+"the configuration register",
+"a TFTP server"
         ],
         correct: [3]
     },
@@ -948,6 +951,98 @@ var questions = [
     },
     {
         type: "choose",
+        question: "<h4>Which firewall feature is used to ensure that packets coming into a network are legitimate responses to requests initiated from internal hosts?</h4>",
+        answers: [
+            "stateful packet inspection",
+"URL filtering",
+"application filtering",
+"packet filtering"
+        ],
+        correct: [1]
+    },
+    {
+        type: "choose",
+        question: "<h4>What is one indication that a Windows computer did not receive an IPv4 address from a DHCP server</h4>",
+        answers: [
+            "The computer cannot ping 127.0.0.1.",
+"Windows displays a DHCP timeout message.",
+"The computer receives an IP address that starts with 169.254",
+"The computer cannot ping other devices on the same network with IP addresses in the 169.254.0.0/16 range."
+        ],
+        correct: [3]
+    },
+    {
+        type: "choose",
+        question: "<h4>Which command can an administrator issue on a Cisco router to send debug messages to the vty lines?</h4>",
+        answers: [
+            "terminal monitor",
+"logging console",
+"logging buffered",
+"logging synchronous"
+        ],
+        correct: [1]
+    },
+    {
+        type: "choose",
+        question: "<h4>A medium-sized business is researching available options for connecting to the Internet. The company is looking for a high speed option with dedicated, symmetric access. Which connection type should the company choose?</h4>",
+        answers: [
+            "DSL",
+"dialup",
+"satellite",
+"leased line",
+"cable modem"
+        ],
+        correct: [4]
+    },
+    {
+        type: "choose",
+        question: "<h4>What is the purpose of having a converged network?</h4>",
+        answers: [
+            "to provide high speed connectivity to all end devices",
+"to make sure that all types of data packets will be treated equally",
+"to achieve fault tolerance and high availability of data network infrastructure devices",
+"to reduce the cost of deploying and maintaining the communication infrastructure"
+        ],
+        correct: [4]
+    },
+    {
+        type: "choose",
+        question: "<h4>What characteristic of a network enables it to quickly grow to support new users and applications without impacting the performance of the service being delivered to existing users?</h4>",
+        answers: [
+            "reliability",
+"scalability",
+"quality of service",
+"accessibility"
+        ],
+        correct: [2]
+    },
+
+{
+        type: "choose",
+        question: "<h4>Refer to the exhibit. From global configuration mode, an administrator is attempting to create a message-of-the-day banner by using the command banner motd V Authorized access only! Violators will be prosecuted! V When users log in using Telnet, the banner does not appear correctly. What is the problem?<img src='img/7.png'</h4>",
+        answers: [
+            "The banner message is too long.",
+"The delimiting character appears in the banner message.",
+"The symbol “!” signals the end of a banner message.",
+"Message-of-the-day banners will only appear when a user logs in through the console port."
+        ],
+        correct: [2]
+    },
+
+{
+        type: "choose",
+        question: "<h4>A technician configures a switch with these commands:<code>SwitchA(config)# interface vlan 1</code><br><code>SwitchA(config-if)# ip address 192.168.1.1 255.255.255.0</code><br><code>SwitchA(config-if)# no shutdown</code><br>What is the technician configuring?</h4>",
+        answers: [
+            "Telnet access",
+"SVI",
+"password encryption",
+"physical switchport access"
+        ],
+        correct: [2]
+    },
+
+{
+        type: "choose",
         question: "<h4>Вопрос</h4>",
         answers: [
             "Ответ 1",
@@ -956,6 +1051,7 @@ var questions = [
         ],
         correct: [3]
     },
+
 
 
 
