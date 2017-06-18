@@ -125,16 +125,145 @@ var quizJSON = {
             ],
             "correct": "<p><span>Правильно!</span></p>",
             "incorrect": "<p><span>Неправильно!</span></p>" // no comma here
-        }
-    ]
+        },
+        {
+    "q": "What are three characteristics of multicast transmission? (Choose three.)",
+"a": [
+    {"option": "Computers use multicast transmission to request IPv4 addresses.","correct": false},
+    {"option": "A single packet can be sent to a group of hosts. *","correct": true},
+    {"option": "The source address of a multicast transmission is in the range of 224.0.0.0 to 224.0.0.255.","correct": false},
+    {"option": "Multicast transmission can be used by routers to exchange routing information. *","correct": false},
+    {"option": "Routers will not forward multicast addresses in the range of 224.0.0.0 to 224.0.0.255.*","correct": false},
+    {"option": "Multicast messages map lower layer addresses to upper layer addresses.","correct": false}
+    ],
+    "correct": "<p><span>Правильно!</span></p>",
+            "incorrect": "<p><span>Неправильно!</span></p>"
+},
+    {
+    "q": "What are three characteristics of an SVI? (Choose three.)",
+    "a": [
+        {"option": "It is designed as a security protocol to protect switch ports.","correct": false},
+        {"option": "It is not associated with any physical interface on a switch.*","correct": false},
+        {"option": "It is a special interface that allows connectivity by different types of media.","correct": false},
+        {"option": "It is required to allow connectivity by any device at any location.","correct": false},
+        {"option": "It provides a means to remotely manage a switch. *","correct": false},
+        {"option": "It is associated with VLAN1 by default.*","correct": true}
+    ],
+    "correct": "<p><span>Правильно!</span></p>",
+    "incorrect": "<p><span>Неправильно!</span></p>"
+    },
+    {
+"q": "Which two protocols operate at the highest layer of the TCP/IP protocol stack? (Choose two.)",
+"a": [
+    {"option": "DNS","correct": true},
+    {"option": "Ethernet","correct": false},
+    {"option": "IP","correct": false},
+    {"option": "POP","correct": true},
+    {"option": "TCP","correct": false},
+    {"option": "UDP","correct": false}
+],
+    "correct": "<p><span>Правильно!</span></p>",
+    "incorrect": "<p><span>Неправильно!</span></p>"
+},
+{
+"q": "Which two roles can a computer assume in a peer-to-peer network where a file is being shared between two computers? (Choose two.)",
+"a": [
+    {"option": "client*","correct": true},
+    {"option": "master","correct": false},
+    {"option": "server*","correct": true},
+    {"option": "slave","correct": false},
+    {"option": "transient","correct": false}
+],
+    "correct": "<p><span>Правильно!</span></p>",
+    "incorrect": "<p><span>Неправильно!</span></p>"
+},
+{
+"q": "Which two functions are primary functions of a router? (Choose two.)",
+"a": [
+    {"option": "packet forwarding*","correct": false},
+    {"option": "microsegmentation","correct": false},
+    {"option": "domain name resolution","correct": false},
+    {"option": "path selection*","correct": false},
+    {"option": "flow control","correct": false}
+],
+    "correct": "<p><span>Правильно!</span></p>",
+    "incorrect": "<p><span>Неправильно!</span></p>"
+},
+{
+"q": "Which two commands can be used on a Windows host to display the routing table? (Choose two.)",
+"a": [
+    {"option": "netstat -s","correct": false},
+    {"option": "route print*","correct": false},
+    {"option": "show ip route","correct": false},
+    {"option": "netstat -r*","correct": false},
+    {"option": "tracert","correct": false}
+],
+    "correct": "<p><span>Правильно!</span></p>",
+    "incorrect": "<p><span>Неправильно!</span></p>"
+},
+{
+"q": "Under which two circumstances will a switch flood a frame out of every port except the port that the frame was received on? (Choose two.)",
+"a": [
+    {"option": "The frame has the broadcast address as the destination address. *","correct": false},
+    {"option": "The destination address is unknown to the switch.*","correct": false},
+    {"option": "The source address in the frame header is the broadcast address.","correct": false},
+    {"option": "The source address in the frame is a multicast address.","correct": false},
+    {"option": "The destination address in the frame is a known unicast address.","correct": false}
+],
+    "correct": "<p><span>Правильно!</span></p>",
+    "incorrect": "<p><span>Неправильно!</span></p>"
+},
+{
+"q": "What are two characteristics of Ethernet MAC addresses? (Choose two.)",
+"a": [
+    {"option": "They are globally unique.*","correct": false},
+    {"option": "They are routable on the Internet.","correct": false},
+    {"option": "They are expressed as 12 hexadecimal digits.*","correct": false},
+    {"option": "MAC addresses use a flexible hierarchical structure.","correct": false},
+    {"option": "MAC addresses must be unique for both Ethernet and serial interfaces on a device.","correct": false}
+],
+    "correct": "<p><span>Правильно!</span></p>",
+    "incorrect": "<p><span>Неправильно!</span></p>"
+},
+{
+"q": "Which three statements characterize UDP? (Choose three.)",
+"a": [
+    {"option": "UDP provides basic connectionless transport layer functions.*","correct": false},
+    {"option": "UDP provides connection-oriented, fast transport of data at Layer 3.","correct": false},
+    {"option": "UDP relies on application layer protocols for error detection. *","correct": false},
+    {"option": "UDP is a low overhead protocol that does not provide sequencing or flow control mechanisms.*","correct": false},
+    {"option": "UDP relies on IP for error detection and recovery.","correct": false},
+    {"option": "UDP provides sophisticated flow control mechanisms.","correct": false}
+],
+    "correct": "<p><span>Правильно!</span></p>",
+    "incorrect": "<p><span>Неправильно!</span></p>"
+},
+{
+"q": "Which two tasks are functions of the presentation layer? (Choose two.)",
+"a": [
+    {"option": "compression*","correct": false},
+    {"option": "addressing","correct": false},
+    {"option": "encryption*","correct": false},
+    {"option": "session control","correct": false},
+    {"option": "authentication","correct": false}
+],
+    "correct": "<p><span>Правильно!</span></p>",
+    "incorrect": "<p><span>Неправильно!</span></p>"
+},
+{
+"q": "What are two ways that TCP uses the sequence numbers in a segment? (Choose two.)",
+"a": [
+    {"option": "to identify missing segments at the destination *","correct": false},
+    {"option": "to reassemble the segments at the remote location*","correct": false},
+    {"option": "to specify the order in which the segments travel from source to destination","correct": false},
+    {"option": "to limit the number of segments that can be sent out of an interface at one time","correct": false},
+    {"option": "to determine if the packet changed during transit","correct": false}
+],
+    "correct": "<p><span>Правильно!</span></p>",
+    "incorrect": "<p><span>Неправильно!</span></p>"
+},
+  
+
+  ]
 };
 
-/*
-"q": "",
-"a": [
-    {"option": "","correct": false},
-    {"option": "","correct": false},
-    {"option": "","correct": false},
-    {"option": "","correct": false},
-    {"option": "","correct": false}
-*/
