@@ -130,10 +130,10 @@ var quizJSON = {
     "q": "What are three characteristics of multicast transmission? (Choose three.)",
 "a": [
     {"option": "Computers use multicast transmission to request IPv4 addresses.","correct": false},
-    {"option": "A single packet can be sent to a group of hosts. *","correct": true},
+    {"option": "A single packet can be sent to a group of hosts. ","correct": true},
     {"option": "The source address of a multicast transmission is in the range of 224.0.0.0 to 224.0.0.255.","correct": false},
-    {"option": "Multicast transmission can be used by routers to exchange routing information. *","correct": false},
-    {"option": "Routers will not forward multicast addresses in the range of 224.0.0.0 to 224.0.0.255.*","correct": false},
+    {"option": "Multicast transmission can be used by routers to exchange routing information. ","correct": true},
+    {"option": "Routers will not forward multicast addresses in the range of 224.0.0.0 to 224.0.0.255.","correct": true},
     {"option": "Multicast messages map lower layer addresses to upper layer addresses.","correct": false}
     ],
     "correct": "<p><span>Правильно!</span></p>",
@@ -143,11 +143,11 @@ var quizJSON = {
     "q": "What are three characteristics of an SVI? (Choose three.)",
     "a": [
         {"option": "It is designed as a security protocol to protect switch ports.","correct": false},
-        {"option": "It is not associated with any physical interface on a switch.*","correct": false},
+        {"option": "It is not associated with any physical interface on a switch.","correct": true},
         {"option": "It is a special interface that allows connectivity by different types of media.","correct": false},
         {"option": "It is required to allow connectivity by any device at any location.","correct": false},
-        {"option": "It provides a means to remotely manage a switch. *","correct": false},
-        {"option": "It is associated with VLAN1 by default.*","correct": true}
+        {"option": "It provides a means to remotely manage a switch. ","correct": true},
+        {"option": "It is associated with VLAN1 by default.","correct": true}
     ],
     "correct": "<p><span>Правильно!</span></p>",
     "incorrect": "<p><span>Неправильно!</span></p>"
@@ -168,9 +168,9 @@ var quizJSON = {
 {
 "q": "Which two roles can a computer assume in a peer-to-peer network where a file is being shared between two computers? (Choose two.)",
 "a": [
-    {"option": "client*","correct": true},
+    {"option": "client","correct": true},
     {"option": "master","correct": false},
-    {"option": "server*","correct": true},
+    {"option": "server","correct": true},
     {"option": "slave","correct": false},
     {"option": "transient","correct": false}
 ],
@@ -180,10 +180,10 @@ var quizJSON = {
 {
 "q": "Which two functions are primary functions of a router? (Choose two.)",
 "a": [
-    {"option": "packet forwarding*","correct": false},
+    {"option": "packet forwarding","correct": true},
     {"option": "microsegmentation","correct": false},
     {"option": "domain name resolution","correct": false},
-    {"option": "path selection*","correct": false},
+    {"option": "path selection","correct": true},
     {"option": "flow control","correct": false}
 ],
     "correct": "<p><span>Правильно!</span></p>",
@@ -193,9 +193,9 @@ var quizJSON = {
 "q": "Which two commands can be used on a Windows host to display the routing table? (Choose two.)",
 "a": [
     {"option": "netstat -s","correct": false},
-    {"option": "route print*","correct": false},
+    {"option": "route print","correct": true},
     {"option": "show ip route","correct": false},
-    {"option": "netstat -r*","correct": false},
+    {"option": "netstat -r","correct": true},
     {"option": "tracert","correct": false}
 ],
     "correct": "<p><span>Правильно!</span></p>",
@@ -204,8 +204,8 @@ var quizJSON = {
 {
 "q": "Under which two circumstances will a switch flood a frame out of every port except the port that the frame was received on? (Choose two.)",
 "a": [
-    {"option": "The frame has the broadcast address as the destination address. *","correct": false},
-    {"option": "The destination address is unknown to the switch.*","correct": false},
+    {"option": "The frame has the broadcast address as the destination address. ","correct": true},
+    {"option": "The destination address is unknown to the switch.","correct": true},
     {"option": "The source address in the frame header is the broadcast address.","correct": false},
     {"option": "The source address in the frame is a multicast address.","correct": false},
     {"option": "The destination address in the frame is a known unicast address.","correct": false}
@@ -216,9 +216,9 @@ var quizJSON = {
 {
 "q": "What are two characteristics of Ethernet MAC addresses? (Choose two.)",
 "a": [
-    {"option": "They are globally unique.*","correct": false},
+    {"option": "They are globally unique.","correct": true},
     {"option": "They are routable on the Internet.","correct": false},
-    {"option": "They are expressed as 12 hexadecimal digits.*","correct": false},
+    {"option": "They are expressed as 12 hexadecimal digits.","correct": true},
     {"option": "MAC addresses use a flexible hierarchical structure.","correct": false},
     {"option": "MAC addresses must be unique for both Ethernet and serial interfaces on a device.","correct": false}
 ],
@@ -228,10 +228,10 @@ var quizJSON = {
 {
 "q": "Which three statements characterize UDP? (Choose three.)",
 "a": [
-    {"option": "UDP provides basic connectionless transport layer functions.*","correct": false},
+    {"option": "UDP provides basic connectionless transport layer functions.","correct": true},
     {"option": "UDP provides connection-oriented, fast transport of data at Layer 3.","correct": false},
-    {"option": "UDP relies on application layer protocols for error detection. *","correct": false},
-    {"option": "UDP is a low overhead protocol that does not provide sequencing or flow control mechanisms.*","correct": false},
+    {"option": "UDP relies on application layer protocols for error detection. ","correct": true},
+    {"option": "UDP is a low overhead protocol that does not provide sequencing or flow control mechanisms.","correct": true},
     {"option": "UDP relies on IP for error detection and recovery.","correct": false},
     {"option": "UDP provides sophisticated flow control mechanisms.","correct": false}
 ],
@@ -241,9 +241,9 @@ var quizJSON = {
 {
 "q": "Which two tasks are functions of the presentation layer? (Choose two.)",
 "a": [
-    {"option": "compression*","correct": false},
+    {"option": "compression","correct": true},
     {"option": "addressing","correct": false},
-    {"option": "encryption*","correct": false},
+    {"option": "encryption","correct": true},
     {"option": "session control","correct": false},
     {"option": "authentication","correct": false}
 ],
@@ -253,8 +253,8 @@ var quizJSON = {
 {
 "q": "What are two ways that TCP uses the sequence numbers in a segment? (Choose two.)",
 "a": [
-    {"option": "to identify missing segments at the destination *","correct": false},
-    {"option": "to reassemble the segments at the remote location*","correct": false},
+    {"option": "to identify missing segments at the destination ","correct": true},
+    {"option": "to reassemble the segments at the remote location","correct": true},
     {"option": "to specify the order in which the segments travel from source to destination","correct": false},
     {"option": "to limit the number of segments that can be sent out of an interface at one time","correct": false},
     {"option": "to determine if the packet changed during transit","correct": false}
@@ -262,6 +262,69 @@ var quizJSON = {
     "correct": "<p><span>Правильно!</span></p>",
     "incorrect": "<p><span>Неправильно!</span></p>"
 },
+{
+"q": "In what two situations would UDP be the preferred transport protocol over TCP? (Choose two.)",
+"a": [
+    {"option": "when applications need to guarantee that a packet arrives intact, in sequence, and unduplicated","correct": false},
+    {"option": "when a faster delivery mechanism is needed","correct": true},
+    {"option": "when delivery overhead is not an issue","correct": false},
+    {"option": "when applications do not need to guarantee delivery of the data","correct": true},
+    {"option": "when destination port numbers are dynamic","correct": false}
+],
+    "correct": "<p><span>Правильно!</span></p>",
+    "incorrect": "<p><span>Неправильно!</span></p>"
+},
+{
+"q": "What are two characteristics shared by TCP and UDP? (Choose two.)",
+"a": [
+    {"option": "default window size","correct": false},
+    {"option": "connectionless communication","correct": false},
+    {"option": "port numbering","correct": true},
+    {"option": "3-way handshake","correct": false},
+    {"option": "ability to to carry digitized voice","correct": false},
+    {"option": "use of checksum","correct": true}
+],
+    "correct": "<p><span>Правильно!</span></p>",
+    "incorrect": "<p><span>Неправильно!</span></p>"
+},
+{
+"q": "Refer to the exhibit. On the basis of the output, which two statements about network connectivity are correct? (Choose two.) <img src='1.jpg'> ",
+"a": [
+    {"option": "There is connectivity between this device and the device at 192.168.100.1.","correct": true},
+    {"option": "The connectivity between these two hosts allows for videoconferencing calls.","correct": false},
+    {"option": "There are 4 hops beetween this device and the device at 192.168.100.1.","correct": true},
+    {"option": "The average transmission time between the two hosts is 2 milliseconds.","correct": false},
+    {"option": "This host does not have a default gateway configured.","correct": false}
+],
+    "correct": "<p><span>Правильно!</span></p>",
+    "incorrect": "<p><span>Неправильно!</span></p>"
+},
+{
+"q": "Which three addresses are valid public addresses? (Choose three.)",
+"a": [
+    {"option": "198.133.219.17","correct": true},
+    {"option": "192.168.1.245","correct": false},
+    {"option": "10.15.250.5","correct": false},
+    {"option": "128.107.12.117","correct": true},
+    {"option": "192.15.301.240","correct": false},
+    {"option": "64.104.78.227 ","correct": true}
+],
+    "correct": "<p><span>Правильно!</span></p>",
+    "incorrect": "<p><span>Неправильно!</span></p>"
+},
+{
+"q": "What are the three ranges of IP addresses that are reserved for internal private use? (Choose three.)",
+"a": [
+    {"option": "10.0.0.0/8","correct": true},
+    {"option": "64.100.0.0/14","correct": false},
+    {"option": "127.16.0.0/12","correct": false},
+    {"option": "172.16.0.0/12","correct": true},
+    {"option": "192.31.7.0/24","correct": false},
+    {"option": "192.168.0.0/16","correct": true}
+],
+    "correct": "<p><span>Правильно!</span></p>",
+    "incorrect": "<p><span>Неправильно!</span></p>"
+}
   
 
   ]
